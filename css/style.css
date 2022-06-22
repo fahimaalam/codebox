@@ -1,0 +1,1623 @@
+/*
+Author Name: Fahima Alam;
+Mail Address:fahima.arefeen@gmail.com;
+Site url:;
+GPL license:3.4.1;
+*/
+
+/*
+====Index====
+1. Home
+2. About
+3. Portfolio
+4. Services
+5. Reviews
+6. Pricing
+7. Blog
+8. Contact
+9. Media Query
+*/
+/*********************** THEME CSS FILE***********************/
+/*********************** Global CSS ***********************/
+body{
+	font-family: 'Oswald', sans-serif;
+	background-color: #f8f9fa;
+	color: #333333;
+}
+h1{
+	font-size: 40px;
+	margin: 40px 0px 50px 0px;
+	letter-spacing: 2px;
+}
+h2{
+  font-size: 33px;
+  margin: 100px 0px 20px 0px;
+}
+h3{
+	font-size: 20px;
+	padding: 5px 0px 0px 0px;
+}
+h4{
+	font-size: 35px;
+	padding: 15px 0px 0px 0px;
+}
+h5{
+	font-size: 15px;
+	padding: 0px 0px 50px 0px;
+}
+h6{
+	font-size: 20px;
+	margin-top: 260px;
+}
+/*********************** Buttons CSS ***********************/
+.btn{
+	padding: 10px 40px;
+	background: #618a20;
+	border: none;
+	font-size: 18px;
+	color: white;
+	border-radius: 10px;
+	margin: 98px 0px 100px 0px;
+}
+.btn:hover{
+	background: white;
+	color: #3d5e27;
+}
+/******************* Navbar Section ******************/
+.navbar-brand{
+	font-family: 'Limelight', cursive;
+	font-size: 40px;
+}
+.navbar-brand span{
+	color: #618a20;
+}
+.navbar{
+	transition: all 0.6s ease;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+	background: #424242;
+}
+/******************* Hero Section ******************/
+.hero{
+	background: url(../img/banner.jpg);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.overlay{
+	position: relative;
+	z-index: 2;
+}
+.overlay::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #0000008c;
+	z-index: -1;
+}
+/******************* About Section ******************/
+.about{
+	background: #f8f9fa;
+	text-align: center;
+	color: #212529;
+}
+.about span{
+	border: 2px solid #618a20;
+	width: 10%;
+	display: block;
+	margin: 0 auto;
+}
+.about p{
+	padding: 20px 0px 60px 0px;
+	font-size: 16px;
+	font-weight: lighter;
+}
+.about-area{
+	background: #f8f9fa;
+}
+.about-content-one{
+	display: flex;
+}
+.fa.fa-picture-o{
+	color: #618a20;
+	font-size: 60px;
+	margin: 50px 0px 0px 0px;
+}
+.fa.fa-picture-o:hover{
+	color: darkred;
+}
+.fa.fa-paint-brush{
+	color: #618a20;
+	font-size: 60px;
+	margin: 50px 0px 0px 0px;
+}
+.fa.fa-paint-brush:hover{
+	color: darkred;
+}
+.fa.fa-th-large{
+	color: #618a20;
+	font-size: 60px;
+	margin: 50px 0px 0px 0px;
+}
+.fa.fa-th-large:hover{
+	color: darkred;
+}
+.fa.fa-scissors{
+	color: #618a20;
+	font-size: 60px;
+	margin: 50px 0px 0px 0px;
+}
+.fa.fa-scissors:hover{
+	color: darkred;
+}
+.fa.fa-wordpress{
+	color: #618a20;
+	font-size: 60px;
+	margin: 50px 0px 0px 0px;
+}
+.fa.fa-wordpress:hover{
+	color: darkred;
+}
+.fa.fa-pencil-square-o{
+	color: #618a20;
+	font-size: 60px;
+	margin: 50px 0px 0px 0px;
+}
+.fa.fa-pencil-square-o:hover{
+	color: darkred;
+}
+.about-content-two{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+/******************* Counter Section ******************/
+.counter{
+	background: url(../img/banner.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.counter-content{
+	color: white;
+	text-align: center;
+}
+.counter-content h1{
+	margin: 100px 0px 15px 0px;
+	font-size: 50px;
+}
+.counter-content h1:hover{
+	color: darkred;
+}
+.counter-content span{
+	border: 2px solid #618a20;
+	width: 10%;
+	display: block;
+	margin: 0 auto;
+}
+.counter-content p{
+	margin: 10px 0px 100px 0px;
+	font-size: 21px;
+}
+/******************* Portfolio Section ******************/
+.portfolio{
+	background: #ffffff;
+	margin: 50px 0px 20px 0px;
+	text-align: center;
+}
+.portfolio h2{
+	font-size: 33px;
+  margin: 0px 0px 20px 0px;
+  padding: 100px 0px 0px 0px;
+}
+.portfolio span{
+	border: 2px solid #618a20;
+	width: 10%;
+	display: block;
+	margin: 0 auto;
+}
+.portfolio p{
+	padding: 20px 0px 60px 0px;
+	font-size: 16px;
+	font-weight: lighter;
+}
+.portfolio-content-one{
+}
+.portfolio-content-two{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.portfolio-info{
+	position: relative;
+	overflow: hidden;
+}
+.portfolio-content{
+	color: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:rgba(33, 37, 41, 0.67);
+	top: 0;
+	right: -100%;
+	transition: 0.4s ease-in-out;
+}
+.portfolio-info:hover .portfolio-content{
+	right: 13px;
+	width: 95%;
+}
+/******************* Portfolio Section ******************/
+.service{
+	background: #f8f9fa;
+	margin: 20px 0px 100px 0px;
+}
+.service h2{
+	font-size: 33px;
+  margin: 0px 0px 20px 0px;
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+}
+.service span{
+	border: 2px solid #618a20;
+	width: 10%;
+	display: block;
+	margin: 0 auto;
+}
+.service p{
+	padding: 20px 100px 60px 100px;
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: center;
+}
+.service-content{
+}
+.service-one{
+	display: flex;
+	background-color: #ffffff;
+	margin-top: 25px;
+	padding: 18px 45px 15px 27px;
+}
+.service-icon{
+	font-size: 55px;
+	padding: 0px 30px 0px 0px;
+	color: #618a20;
+}
+.service-icon:hover{
+	color: darkred;
+}
+.service-text{
+}
+.service-text p{
+	padding: 0px 0px 0px 0px;
+	font-size: 15px;
+	text-align: inherit;
+}
+/******************* Reviews Section ******************/
+.carousel-dark .carousel-caption {
+  color: #f8f6f6;
+  background:rgba(33, 37, 41, 0.77);
+  font-size: 36px;
+  margin: 0px 0px 100px 0px;
+}
+.carousel-caption p{
+	font-size: 18px;
+	padding: 10px 100px 20px 100px;
+	font-weight: lighter;
+}
+small{
+	color:#618a20;
+}
+.fa.fa-quote-left{
+	font-size: 40px;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 20px;
+  background-color: #fefefe!important;
+}
+.carousel-indicators{
+	color:#fffff!important;
+}
+
+/******************* Pricing Section ******************/
+.pricing{
+	background: #f8f9fa;
+	margin: 20px 0px 100px 0px;
+	text-align: center;
+}
+.pricing-content h2{
+	font-size: 33px;
+  margin: 0px 0px 20px 0px;
+  padding: 80px 0px 0px 0px;
+  text-align: center;
+}
+.pricing-content span{
+	border: 2px solid #618a20;
+	width: 10%;
+	display: block;
+	margin: 0 auto;
+}
+.pricing-content p{
+	padding: 20px 100px 60px 100px;
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: center;
+}
+.card-one h5{
+	font-size: 22px;
+	padding: 50px 0px 0px 0px;
+}
+.card-one h1{
+	font-size: 43px;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0px 10px 0px;
+}
+.card-one p{
+	font-weight: lighter;
+	line-height: 43px;
+}
+.card-one{
+	background-color: white;
+	margin: 0px 50px 0px 125px;
+}
+.card-two{
+	background-color: #618a20;
+	margin: 0px 50px 0px 0px;
+	color: white;
+}
+.card-two h5{
+	font-size: 22px;
+	padding: 50px 0px 0px 0px;
+}
+.card-two h1{
+	font-size: 43px;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0px 10px 0px;
+}
+.card-two p{
+	font-weight: lighter;
+	line-height: 43px;
+}
+.card-three{
+	background-color: white;
+}
+.card-three h5{
+	font-size: 22px;
+	padding: 50px 0px 0px 0px;
+}
+.card-three h1{
+	font-size: 43px;
+	margin: 0px 0px 0px 0px;
+	padding: 4px 0px 10px 0px;
+}
+.card-three p{
+	font-weight: lighter;
+	line-height: 43px;
+}
+.price-btn{
+	padding: 12px 40px;
+	border: 2px solid #618a20;
+	background: transparent;
+	border-radius: 44px;
+	margin-bottom: 50px;
+	font-size: 18px;
+}
+.price-btn:hover{
+	background-color: #618a20;
+	color: white;
+}
+.price-btn-two{
+	padding: 12px 40px;
+	border:none;
+	background: white;
+	border-radius: 44px;
+	margin-bottom: 50px;
+	font-size: 18px;
+	color: #333333;
+}
+.price-btn-two:hover{
+	background-color: #333333;
+	color: white;
+}
+.blank_space{
+	padding: 30px 0px 30px 0px;
+}
+/******************* Blog Section ******************/
+.blog{
+	background: #ffffff;
+	margin: 20px 0px 0px 0px;
+	text-align: center;
+}
+.blog-content h2{
+	font-size: 33px;
+  margin: 0px 0px 20px 0px;
+  padding: 60px 0px 0px 0px;
+  text-align: center;
+}
+.blog-content span{
+	border: 2px solid #618a20;
+	width: 10%;
+	display: block;
+	margin: 0 auto;
+}
+.blog-content p{
+	padding: 20px 100px 60px 100px;
+	font-size: 16px;
+	font-weight: lighter;
+	text-align: center;
+}
+.blog-details{
+	display: flex;
+	margin-bottom: 90px;
+}
+.card{
+	border: none;
+}
+.card-body h5{
+	font-size: 20px;
+}
+.list-group-item a{
+	text-decoration: none;
+	color: #333333;
+}
+.accordion-header{
+	margin: 0px;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+	color: #333333;
+	font-size: 14px;
+}
+.accordion-body {
+  font-size: 14px;
+  font-weight: lighter;
+}
+.card-text:last-child {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+.card-body a{
+	text-decoration: none;
+	color: darkred;
+	font-size: 15px;
+}
+.card-title {
+  margin-bottom: -2.5rem;
+}
+/******************* Project Section ******************/
+.project{
+	background: #424242;
+	color: white;
+	display: flex;
+}
+.project-one{
+}
+.project-one h1{
+	padding: 40px 0px 40px 0px;
+	text-align: center;
+}
+.project-two{
+}
+.project-btn{
+	padding: 10px 40px;
+	background: transparent;
+	color: white;
+	border: 2px solid white;
+	font-size: 18px;
+	border-radius: 10px;
+	margin: 86px 0px 50px 0px;
+}
+.project-btn:hover{
+	background: white;
+	color: #618a20;
+}
+/******************** Footer Section Start********************/
+footer{
+	background: rgb(33, 37, 41);
+	padding: 25px 0px 25px 0px;
+}
+.footer-content{
+	color: white;
+	font-size: 22px;
+	font-family: 'Water Brush', cursive;
+}
+.footer-icons{
+
+}
+.fa.fa-facebook{
+	padding: 6px 10px 6px 10px;
+	background-color: #618a20;
+	color: white;
+	font-size: 16px;
+	margin: 0px 2px 0px 2px;
+	transition: 0.4s ease-in-out;
+}
+.fa.fa-facebook:hover{
+	background-color:#88001b;
+	border: 1px solid white;
+	transform: rotate(360deg);
+}
+.fa.fa-twitter{
+	padding: 6px 10px 6px 10px;
+	background-color: #618a20;
+	color: white;
+	font-size: 16px;
+	margin: 0px 2px 0px 2px;
+	transition: 0.4s ease-in-out;
+}
+.fa.fa-twitter:hover{
+	background-color:#88001b;
+	border: 1px solid white;
+	transform: rotate(360deg);
+}
+.fa.fa-linkedin{
+	padding: 6px 10px 6px 10px;
+	background-color: #618a20;
+	color: white;
+	font-size: 16px;
+	margin: 0px 2px 0px 2px;
+	transition: 0.4s ease-in-out;
+}
+.fa.fa-linkedin:hover{
+	background-color:#88001b;
+	border: 1px solid white;
+	transform: rotate(360deg);
+}
+.fa.fa-envelope{
+	padding: 6px 10px 6px 10px;
+	background-color: #618a20;
+	color: white;
+	font-size: 16px;
+	margin: 0px 2px 0px 2px;
+	transition: 0.4s ease-in-out;
+}
+.fa.fa-envelope:hover{
+	background-color:#88001b;
+	border: 1px solid white;
+	transform: rotate(360deg);
+}
+
+/********************************************* Media Query **************************************************/ 
+/******************************Small Device (PHONES)  ***********************************/ 
+@media(min-width: 320px) and (max-width: 600px){
+.navbar-brand {
+  font-size: 36px;
+}
+.navbar-collapse {
+  background-color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+h6 {
+  font-size: 18px;
+  margin: 132px 0px 10px 0px;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 31px;
+  margin: 60px 0px 20px 0px;
+}
+.btn{
+	margin: 0px 0px 40px 0px;
+}
+.about p {
+  padding: 20px 0px 20px 0px;
+  font-size: 15px;
+}
+.card{
+	width: 20rem!important;
+	margin-top: 20px;
+}
+.about-content-one{
+	display: inline-block;
+}
+.about-content-two {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.counter-content{
+
+}
+.counter-content h1 {
+  font-size: 25px;
+}
+.counter-content p {
+  margin: 10px 0px 10px 0px;
+  font-size: 15px;
+}
+.counter-content span {
+  border: 1px solid #618a20;
+  width: 20%;
+}
+.portfolio h2 {
+  padding: 35px 0px 0px 0px;
+}
+.portfolio p {
+  padding: 20px 0px 15px 0px;
+}
+.portfolio-info {
+  margin-top: 10px;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 93%;
+}
+.portfolio-content-two {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.service {
+  margin: 20px 0px 10px 0px;
+}
+.service p {
+  padding: 5px 0px 2px 0px;
+  font-size: 15px;
+}
+.service-icon {
+  padding: 0px 20px 0px 0px;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+.carousel-dark .carousel-caption {
+  font-size: 16px;
+  margin: 0px 0px 13px 0px;
+}
+.carousel-caption p {
+  font-size: 12px;
+  padding: 0px 0px 0px 0px;
+  font-weight: lighter;
+}
+h4 {
+  font-size: 15px;
+  padding: 0px 0px 0px 0px;
+}
+.fa.fa-quote-left {
+  font-size: 17px;
+}
+.carousel-caption {
+  right: 0%;
+  bottom: -2.75rem;
+  left: 0%;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 20px!important;
+  background-color: #fefefe!important;
+}
+.pricing-content p {
+  padding: 17px 10px 0px 10px;
+  font-size: 15px;
+}
+.card-one {
+  margin: 0px 0px 0px 0px;
+}
+.card-two {
+  margin: 0px 0px 0px 55px;
+}
+.card-three {
+  margin: 0px 0px 0px 55px;
+}
+.blank_space {
+  padding: 0px 0px 0px 0px;
+}
+.blog-one{
+	display: block;
+	margin: 0 auto;
+}
+.blog-content h2 {
+  font-size: 33px;
+  margin: 0px 0px 16px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+.blog-content p {
+  padding: 20px 10px 0px 10px;
+}
+.blog-details {
+  margin-bottom: 40px;
+  display: block;
+}
+.project {
+  display: block;
+}
+.project-btn {
+  margin: 30px auto;
+  display: block;
+  font-size: 15px;
+  padding: 7px 30px;
+}
+.project-one h1{
+  margin: 40px 0px 0px 0px;
+  font-size: 30px;
+}
+.col-md-3 {
+  width: 60%!important;
+}
+.card-one {
+  margin: 0px 50px 0px 55px!important;
+}
+.footer-content{
+	display: block;
+	margin: 0 auto;
+}
+.footer-icons{
+	display: block;
+	margin: 0 auto;
+}
+}
+@media(min-width: 345px) and (max-width: 362px){
+.card{
+	width: 21rem!important;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 94%;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 93%;
+}
+.counter-content h1 {
+  font-size: 25px;
+}
+.counter-content p {
+  margin: 10px 0px 50px 0px;
+  font-size: 15px;
+}
+.counter-content span {
+  border: 1px solid #618a20;
+  width: 20%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 21px!important;
+}
+.col-md-3 {
+  width: 61%!important;
+}
+.card-one {
+  margin: 0px 50px 0px 72px;
+}
+.card-two {
+  margin: 0px 0px 0px 85px;
+}
+.card-three {
+  margin: 0px 0px 0px 85px;
+}
+.price-btn {
+  font-size: 14px;
+}
+.price-btn-two {
+  font-size: 14px;
+}
+.counter-one{
+	display: block;
+	margin: 0 auto;
+}
+.blog-one{
+	display: block;
+	margin: 0 auto;
+}
+.footer-content{
+	display: block;
+	margin: 0 auto;
+}
+.footer-icons{
+	display: block;
+	margin: 0 auto;
+}
+}
+@media(min-width:363px) and (max-width: 380px){
+	.card{
+	width: 22rem!important;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 94%;
+}
+.counter-content h1 {
+  font-size: 25px;
+}
+.counter-content p {
+  margin: 10px 0px 100px 0px;
+  font-size: 15px;
+}
+.counter-content span {
+  border: 1px solid #618a20;
+  width: 20%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 21px!important;
+}
+.col-md-3 {
+  width: 61%!important;
+}
+.card-one {
+  margin: 0px 50px 0px 72px;
+}
+.card-two {
+  margin: 0px 0px 0px 85px;
+}
+.card-three {
+  margin: 0px 0px 0px 85px;
+}
+.price-btn {
+  font-size: 14px;
+}
+.price-btn-two {
+  font-size: 14px;
+}
+.counter-one{
+	display: block;
+	margin: 0 auto;
+}
+.blog-one{
+	display: block;
+	margin: 0 auto;
+}
+.footer-content{
+	display: block;
+	margin: 0 auto;
+}
+.footer-icons{
+	display: block;
+	margin: 0 auto;
+}
+}
+@media(min-width:381px) and (max-width: 394px){
+	.card{
+	width: 23rem!important;
+}
+.counter-content h1 {
+  font-size: 25px;
+}
+.counter-content p {
+  margin: 10px 0px 50px 0px;
+  font-size: 15px;
+}
+.counter-content span {
+  border: 1px solid #618a20;
+  width: 20%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 2px!important;
+}
+.col-md-3 {
+  width: 61%!important;
+}
+.card-one {
+  margin: 0px 50px 0px 72px;
+}
+.card-two {
+  margin: 0px 0px 0px 85px;
+}
+.card-three {
+  margin: 0px 0px 0px 85px;
+}
+.price-btn {
+  font-size: 14px;
+}
+.price-btn-two {
+  font-size: 14px;
+}
+.counter-one{
+	display: block;
+	margin: 0 auto;
+}
+.blog-one{
+	display: block;
+	margin: 0 auto;
+}
+.footer-content{
+	display: block;
+	margin: 0 auto;
+}
+.footer-icons{
+	display: block;
+	margin: 0 auto;
+}
+}
+@media(min-width:395px) and (max-width: 412px){
+	.card{
+	width: 24rem!important;
+}
+.counter-content h1 {
+  font-size: 25px;
+}
+.counter-content p {
+  margin: 10px 0px 50px 0px;
+  font-size: 15px;
+}
+.counter-content span {
+  border: 1px solid #618a20;
+  width: 20%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 3px!important;
+}
+.col-md-3 {
+  width: 61%!important;
+}
+.card-one {
+  margin: 0px 50px 0px 72px;
+}
+.card-two {
+  margin: 0px 0px 0px 85px;
+}
+.card-three {
+  margin: 0px 0px 0px 85px;
+}
+.price-btn {
+  font-size: 14px;
+}
+.price-btn-two {
+  font-size: 14px;
+}
+.counter-one{
+	display: block;
+	margin: 0 auto;
+}
+.blog-one{
+	display: block;
+	margin: 0 auto;
+}
+.footer-content{
+	display: block;
+	margin: 0 auto;
+}
+.footer-icons{
+	display: block;
+	margin: 0 auto;
+}
+}
+@media(min-width:413px) and (max-width: 440px){
+	.card{
+	width: 26rem !important;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 13px;
+  width: 94%;
+}
+.counter-content h1 {
+  font-size: 25px;
+}
+.counter-content p {
+  margin: 10px 0px 50px 0px;
+  font-size: 15px;
+}
+.counter-content span {
+  border: 1px solid #618a20;
+  width: 20%;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 0px!important;
+}
+.col-md-3 {
+  width: 61%!important;
+}
+.card-one {
+  margin: 0px 50px 0px 72px;
+}
+.card-two {
+  margin: 0px 0px 0px 85px;
+}
+.card-three {
+  margin: 0px 0px 0px 85px;
+}
+.price-btn {
+  font-size: 14px;
+}
+.price-btn-two {
+  font-size: 14px;
+}
+.counter-one{
+	display: block;
+	margin: 0 auto;
+}
+.blog-one{
+	display: block;
+	margin: 0 auto;
+}
+.footer-content{
+	display: block;
+	margin: 0 auto;
+}
+.footer-icons{
+	display: block;
+	margin: 0 auto;
+}
+}
+@media(min-width:440px) and (max-width: 512px){
+	.card{
+	width: 28rem!important;
+}
+.portfolio h2 {
+  padding: 86px 0px 0px 0px;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 95%!important;
+}
+.counter-content p {
+  margin: 10px 0px 10px 0px!important;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 2px !important;
+  background-color: #fefefe !important;
+}
+.card-one {
+  margin: 0px 0px 0px 95px !important;
+}
+.card-two {
+  margin: 0px 0px 0px 96px;
+}
+.card-three {
+  margin: 0px 0px 0px 96px;
+}
+footer{
+	text-align: center;
+}
+.col-md-3 {
+  width: 49% !important;
+}
+}
+@media(min-width:513px) and (max-width: 540px){
+	.card{
+	width: 32rem!important;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 96%!important;
+}
+.portfolio h2 {
+  padding: 86px 0px 0px 0px;
+}
+.col-md-3 {
+  width: 61%!important;
+}
+.card-one {
+  margin: 0px 50px 0px 72px;
+}
+.card-two {
+  margin: 0px 0px 0px 85px;
+}
+.card-three {
+  margin: 0px 0px 0px 85px;
+}
+.price-btn {
+  font-size: 14px;
+}
+.price-btn-two {
+  font-size: 14px;
+}
+.counter-one{
+	display: block;
+	margin: 0 auto;
+}
+.blog-one{
+	display: block;
+	margin: 0 auto;
+}
+.footer-content{
+	display: block;
+	margin: 0 auto;
+}
+.footer-icons{
+	display: block;
+	margin: 0 auto;
+}
+}
+@media(min-width:541px) and (max-width: 563px){
+	.card{
+	width: 34rem!important;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 96%!important;
+}
+}
+@media(min-width:564px) and (max-width: 575px){
+	.card{
+	width: 36rem!important;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 96%;
+}
+}
+@media(min-width:575px) and (max-width: 600px){
+	.card{
+	width: 32rem!important;
+}
+.about-content-one{
+	display: block;
+}
+.about-content-two{
+	display: block;
+}
+}
+/****************************** Medium Device (TABLETS)  ***********************************/ 
+@media(min-width: 601px) and (max-width: 768px){
+.navbar-brand {
+  font-size: 36px;
+}
+.navbar-collapse {
+  background-color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+h6 {
+  font-size: 18px;
+  margin: 132px 0px 10px 0px;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 31px;
+  margin: 60px 0px 20px 0px;
+}
+.btn{
+	margin: 0px 0px 40px 0px;
+}
+.about-content-one{
+	display: inline-block;
+}
+.about-content-two {
+  display: inline-block;
+  margin: 0px;
+}
+.card{
+	width: 33rem!important;
+	margin: 10px 0px 30px 0px;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 96%!important;
+}
+.counter-content h1 {
+  margin: 15px 0px 15px 0px;
+  font-size: 50px;
+}
+.service {
+  margin: 20px 0px 30px 0px;
+}
+.service p {
+  padding: 20px 10px 20px 10px;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+.carousel-dark .carousel-caption {
+  font-size: 16px;
+  margin: 0px 0px -12px 0px;
+}
+.carousel-caption p {
+  font-size: 12px;
+  padding: 0px 0px 0px 0px;
+  font-weight: lighter;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 0px;
+}
+h4 {
+  font-size: 15px;
+  padding: 0px 0px 0px 0px;
+}
+.fa.fa-quote-left {
+  font-size: 24px;
+}
+.pricing-content p {
+  padding: 20px 10px 15px 10px;
+}
+.card-one {
+  margin: 0px 50px 0px 0px;
+}
+.blank_space {
+  padding: 0px 0px 0px 0px;
+}
+.col-md-3 {
+  width: 25%!important;
+}
+.card-one {
+  margin: 0px 50px 0px 22px!important;
+}
+.card-one h1 {
+  font-size: 27px;
+}
+.card-two h1 {
+  font-size: 27px;
+}
+.card-three h1 {
+  font-size: 27px;
+}
+.price-btn {
+  padding: 5px 20px!important;
+  font-size: 14px!important;
+}
+.price-btn-two {
+  padding: 5px 20px!important;
+  font-size: 14px !important;
+}
+.blog-content h2 {
+  font-size: 33px;
+  margin: 0px 0px 16px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+.blog-content p {
+  padding: 20px 10px 0px 10px;
+}
+.blog-details {
+  margin-bottom: 40px;
+  display: block;
+}
+.project {
+  display: block;
+}
+.project-btn {
+  margin: 30px auto;
+  display: block;
+  font-size: 15px;
+  padding: 7px 30px;
+}
+.project-one h1{
+  margin: 40px 0px 0px 0px;
+  font-size: 30px;
+}
+.footer-content{
+	display: block !important;
+	margin: 0 auto !important;
+}
+.footer-icons{
+	display: block !important;
+	margin: 0 auto!important;
+}
+}
+@media(min-width: 657px) and (max-width: 700px){
+.portfolio-info:hover .portfolio-content {
+  right: 14px;
+  width: 96%;
+}
+.footer-content{
+	display: block !important;
+	margin: 0 auto !important;
+}
+.footer-icons{
+	display: block !important;
+	margin: 0 auto!important;
+}
+}
+@media(min-width: 700px) and (max-width: 768px){
+.portfolio-info:hover .portfolio-content {
+  right: 11px;
+  width: 97%;
+}
+
+}
+/****************************** Large Device (LAPTOPS - small screen size)  ***********************************/ 
+@media(min-width: 769px) and (max-width: 992px){
+	.navbar-brand {
+  font-size: 36px;
+}
+.navbar-collapse {
+  background-color: white;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: black;
+}
+h6 {
+  font-size: 18px;
+  margin: 132px 0px 10px 0px;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 31px;
+  margin: 60px 0px 20px 0px;
+}
+.btn{
+	margin: 0px 0px 40px 0px;
+}
+.about-content-one{
+	display: flex;
+}
+.about-content-two {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.col-sm-6 {
+  flex: 0 0 auto;
+  width: 32%;
+}
+.card{
+	width: 16rem!important;
+	margin: 10px 0px 30px 0px;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 0px;
+  width: 91%!important;
+}
+.portfolio-content-two {
+  margin-bottom: 50px;
+}
+.counter-content h1 {
+  margin: 60px 0px 15px 0px;
+  font-size: 50px;
+}
+.service {
+  margin: 20px 0px 30px 0px;
+}
+.service p {
+  padding: 30px 0px 0px 0px;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+.carousel-dark .carousel-caption {
+  font-size: 16px;
+  margin: 0px 0px -12px 0px;
+}
+.carousel-caption p {
+  font-size: 12px;
+  padding: 0px 0px 0px 0px;
+  font-weight: lighter;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 0px;
+}
+h4 {
+  font-size: 15px;
+  padding: 0px 0px 0px 0px;
+}
+.fa.fa-quote-left {
+  font-size: 24px;
+}
+.pricing-content h2 {
+  padding: 35px 0px 0px 0px;
+}
+.pricing-content p {
+  padding: 20px 10px 15px 10px;
+}
+.price-btn {
+  padding: 12px 34px;
+  font-size: 13px;
+}
+.price-btn-two{
+	padding: 12px 34px;
+  font-size: 13px;
+}
+.card-one {
+  margin: 0px 50px 0px 30px!important;
+}
+
+.blank_space {
+  padding: 0px 0px 0px 0px;
+}
+.portfolio h2 {
+	font-size: 27px;
+  padding: 40px 0px 10px 0px;
+  margin: 0px 0px 0px 0px;
+}
+.blog-content h2 {
+  font-size: 33px;
+  margin: 0px 0px 16px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+.blog-content p {
+  padding: 20px 10px 0px 10px;
+}
+
+.project {
+  display: block;
+}
+.project-btn {
+  margin: 30px auto;
+  display: block;
+  font-size: 15px;
+  padding: 7px 30px;
+}
+.project-one h1{
+  margin: 40px 0px 0px 0px;
+  font-size: 30px;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 11px;
+  width: 91%;
+}
+.col-md-3 {
+  width: 26%;
+}
+.card-img, .card-img-bottom, .card-img-top {
+  width: 65%!important;
+}
+.accordion{
+	width: 65%!important;
+}
+.card-text:last-child {
+  width: 65%!important;
+}
+.card-body h5 {
+  width: 65%!important;
+  font-size: 146px;
+}
+.card-body a {
+  font-size: 12px;
+}
+.list-group-flush > .list-group-item {
+  width: 65%!important;
+}
+.project {
+  display: flex;
+}
+.project-btn {
+  margin-top: 80px;
+}
+.project-one h1{
+  font-size: 28px;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  font-size: 13px;
+}
+footer {
+  text-align: center;
+}
+}
+/****************************** Large Device ( Big Screen Laptop, Monitor)  ***********************************/ 
+@media(min-width: 993px) and (max-width: 1200px){
+.about-content-one{
+	display: flex;
+}
+.about-content-two {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.card{
+	width: 19rem!important;
+	margin: 10px 0px 20px 0px;
+}
+}
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 93%;
+}
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+.carousel-dark .carousel-caption {
+  font-size: 16px;
+  margin: 0px 0px -12px 0px;
+}
+.carousel-caption p {
+  font-size: 14px;
+  padding: 0px 0px 0px 0px;
+  font-weight: lighter;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  margin-bottom: 0px;
+}
+.card-one {
+  margin: 0px 50px 0px 85px;
+}
+.price-btn {
+  font-size: 16px;
+}
+.price-btn-two {
+  font-size: 16px;
+}
+.col-md-3 {
+  width: 25%;
+}
+.card-img, .card-img-bottom, .card-img-top {
+  width: 68%;
+}
+.accordion{
+	width: 68%;
+}
+.card-text:last-child {
+  width: 68%;
+}
+.card-body h5 {
+  width: 68%;
+  font-size: 16px;
+}
+.list-group-flush > .list-group-item {
+  width: 60%;
+}
+}
+@media(min-width: 1065px) and (max-width: 1100px){
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 94%;
+}
+}
+@media(min-width: 1100px) and (max-width: 1166px){
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 93%;
+}
+}
+@media(min-width: 1166px) and (max-width: 1200px){
+.portfolio-info:hover .portfolio-content {
+  right: 12px;
+  width: 94%;
+}
+}
+/****************************** Large Device ( Big Screen Laptop, Monitor)  ***********************************/ 
+@media(min-width: 1201px) and (max-width: 1399px){
+.col-md-3 {
+  width: 24.33%;
+}
+.card-img, .card-img-bottom, .card-img-top {
+  width: 88%;
+}
+.accordion{
+	width: 88%;
+}
+.card-text:last-child {
+  width: 88%;
+}
+.card-body h5 {
+  width: 88%;
+  font-size: 16px;
+}
+.list-group-flush > .list-group-item {
+  width: 80%;
+}
+.portfolio-info:hover .portfolio-content {
+  right: 13px;
+  width: 94%;
+}
+}
+/****************************** Large Device ( Big Screen Laptop, Monitor)  ***********************************/ 
+@media(min-width: 1400px){
+.col-md-3 {
+  width: 25%;
+}
+.card-img, .card-img-bottom, .card-img-top {
+  width: 100%;
+}
+.accordion{
+	width: 100%;
+}
+.card-text:last-child {
+  width: 100%;
+}
+.card-body h5 {
+  width: 100%;
+  font-size: 16px;
+}
+.list-group-flush > .list-group-item {
+  width: 100%;
+}
+.portfolio-info:hover .portfolio-content{
+	right: 13px;
+	width: 95%;
+}
+}
+/************************************************************ END  *****************************************************************/ 
