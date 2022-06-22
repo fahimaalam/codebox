@@ -1,2 +1,2 @@
 # codebox
-responsive-bootstrap
+partially responsive-bootstrap
